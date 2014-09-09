@@ -1,16 +1,11 @@
 /* See LICENSE file for copyright and license details. */
 
 #include "push.c"
+#include "machine.h"
 
 /* appearance */
-//static const char font[]            = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
-static const char font[]	    = "-*-tewi-medium-*-*-*-*-*-*-*-*-*-*-*";
-static const char normbordercolor[] = "#334133";
-static const char normbgcolor[]     = "#192019";
-static const char normfgcolor[]     = "#cacecd";
-static const char selbordercolor[]  = "#22a086";
-static const char selbgcolor[]      = "#22a086";
-static const char selfgcolor[]      = "#cacecd";
+static const char font[]            = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
+//static const char font[]	    = "-*-tewi-medium-*-*-*-*-*-*-*-*-*-*-*";
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const Bool showbar           = True;     /* False means no bar */
@@ -54,8 +49,6 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "j4-dmenu-desktop", NULL };
-static const char *termcmd[]  = { "urxvt", NULL };
-static const char *mpdclientcmd[] = { "ncmpcpp", NULL};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
