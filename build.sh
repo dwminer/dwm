@@ -11,4 +11,4 @@ else
 	exit
 fi
 
-makepkg -f
+makepkg -if
