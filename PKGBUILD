@@ -15,7 +15,7 @@ depends=('libx11' 'libxinerama')
 provides=("dwm")
 conflicts=("dwm")
 
-build() {
+package() {
   cd $startdir
 
   make clean

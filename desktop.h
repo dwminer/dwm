@@ -5,5 +5,4 @@ static const char selbordercolor[]  = "#22a086";
 static const char selbgcolor[]      = "#22a086";
 static const char selfgcolor[]      = "#cacecd";
 
-static const char *termcmd[]  = { "urxvt -cd `xcwd`", NULL };
 static const char *mpdclientcmd[] = { "urxvt", "-e", "ncmpcpp", NULL};
