@@ -5,4 +5,3 @@ static const char selbordercolor[]  = "#005577";
 static const char selbgcolor[]      = "#005577";
 static const char selfgcolor[]      = "#eeeeee";
 
-static const char *termcmd[]  = { "lxterminal", NULL };
