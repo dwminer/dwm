@@ -51,6 +51,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "j4-dmenu-desktop", NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
+static const char *mpdclientcmd[] = { "urxvt", "-e", "ncmpcpp", NULL};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
