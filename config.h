@@ -52,12 +52,14 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "j4-dmenu-desktop", NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
 static const char *mpdclientcmd[] = { "urxvt", "-e", "ncmpcpp", NULL};
+static const char *filebrowsercmd[] = {"urxvt", "-e", "ranger", NULL};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,						XK_n,	   spawn,          {.v = mpdclientcmd } },
+	{ MODKEY,						XK_r,      spawn,          {.v = filebrowsercmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
